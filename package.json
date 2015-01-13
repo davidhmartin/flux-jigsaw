@@ -1,0 +1,23 @@
+{
+  "name": "flux-jigsaw",
+  "version": "0.1.0",
+  "description": "flux-jigsaw: svg jigsaw puzzle wire frame generation using flux/react",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-browserify": "^0.5.0",
+    "gulp-concat": "^2.2.0",
+    "react": "^0.12.2",
+    "reactify": "^0.14.0",
+    "flux": "^2.0.1",
+    "underscore": "~1.7.0",
+    "seedrandom": "^2.3.11",
+    "react-slider": "^0.3.1"
+  },
+
+  "scripts": {
+    "start": "gulp build && open dist/index.html && gulp watch",
+    "build": "gulp"
+  }
+}
