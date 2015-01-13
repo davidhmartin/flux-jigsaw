@@ -17,23 +17,8 @@ experience of using React against mvc frameworks such as Backbone.
 
 ## Current Status
 
-This is a work in progress. Here is a partial todo list:
+This is a work in progress. Still to-do: css styles, some implementation cleanup, additional features such as image export. 
 
-### Make it look nice
-
-Current css styles are a placeholder
-
-### Clean up implementation
-
-The implementation is not as clean as I would like, particularly in
-the Flux Store. Considering updating the implementation to use
-Fluxxor.
-
-### Features
-
-* An action to export the SVG document.
-* Actions to export to other image formats
-* Actions to jigsawify imported images, although this might be made into a separate app.
 
 ## Running the project
 
