@@ -38,7 +38,7 @@ var TextInput = React.createClass({
           <div>
           <label for={this.props.attrName}>{this.props.label}</label>
             <input
-              className={this.props.className}
+              className="form-control"
               placeholder={this.props.placeholder}
               onBlur={this._save}
               onChange={this._onChange}

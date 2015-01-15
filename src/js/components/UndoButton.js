@@ -20,7 +20,7 @@ var UndoButton = React.createClass({
   render: function() {
     var disabled = ! this.state.canUndo;
     return (
-      <button className="btn" onClick={this._undo} disabled={disabled}>Undo</button>
+      <button className="btn btn-default" onClick={this._undo} disabled={disabled}>Undo</button>
     );
   },
 
@@ -30,6 +30,7 @@ var UndoButton = React.createClass({
 
   _undo: function() {
     JigsawActions.undo();
+      return false;
   }
 
 });

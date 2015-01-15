@@ -31,9 +31,15 @@ var JigsawSvg = React.createClass({
           strokeLinejoin: "miter"};
     var pixelWidth = this.state["pixelWidth"];
     var pixelHeight = this.state["pixelHeight"];
+
+    // Note: We size the element slightly larger than the pixel
+      // dimentions, and translate by 5 pixels, to work around a
+      // rendering issue in firefox, where the left and upper edges
+      // were cut off. 
     return (
       <div>
-      <svg width={pixelWidth} height={pixelHeight} version={"1.1"} xmlns={"http://www.w3.org/2000/svg"}>
+      <h1>SVG:</h1>
+      <svg style={{width: pixelWidth + 10, height: pixelHeight + 10}} transform="translate(5, 5)" version={"1.1"} xmlns={"http://www.w3.org/2000/svg"}>
       <path
         d={svgGenerator(this.state).generateSvgPath()}
         style={lineStyle}>

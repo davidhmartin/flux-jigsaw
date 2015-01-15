@@ -24,13 +24,13 @@ var Randomizer = React.createClass({
   render: function() {
     var disabled = ! this.state.canRedo;
     return (
-      <div><button className="btn" onClick={this._randomize}>Randomize</button>
-      </div>
+      <button className="btn btn-default" onClick={this._randomize}>Randomize</button>
     );
   },
 
   _randomize: function() {
     JigsawActions.randomize();
+      return false;
   },
 
   _onChange: function() {

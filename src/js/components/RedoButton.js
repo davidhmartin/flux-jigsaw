@@ -20,7 +20,7 @@ var RedoButton = React.createClass({
   render: function() {
     var disabled = ! this.state.canRedo;
     return (<span>
-      <button className="btn" onClick={this._redo} disabled={disabled}>Redo</button></span>
+      <button className="btn btn-default" onClick={this._redo} disabled={disabled}>Redo</button></span>
     );
   },
 
@@ -30,6 +30,7 @@ var RedoButton = React.createClass({
 
   _redo: function() {
     JigsawActions.redo();
+      return false;
   }
 
 });

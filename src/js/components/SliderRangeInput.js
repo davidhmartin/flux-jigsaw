@@ -45,6 +45,7 @@ var SliderRangeInput = React.createClass({
     return (
       <div>
         <label>{this.props.label}</label>
+        <div className="form-control">
         <ReactSlider
           withBars
           value={[this.state[this.props.minAttrName], this.state[this.props.maxAttrName]]}
@@ -55,6 +56,7 @@ var SliderRangeInput = React.createClass({
           min={this.props.minVal}
           max={this.props.maxVal}
           step={this.props.step}/>
+</div>
       </div>
     );
   },

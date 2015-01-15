@@ -42,6 +42,7 @@ var SliderInput = React.createClass({
     return (
       <div>
         <label>{this.props.label}</label>
+        <div className="form-control">
         <ReactSlider
           withBars
           value={this.state.value}
@@ -52,6 +53,7 @@ var SliderInput = React.createClass({
           min={this.props.minVal}
           max={this.props.maxVal}
           step={this.props.step}/>
+        </div>
       </div>
     );
   },
