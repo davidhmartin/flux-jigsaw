@@ -7,6 +7,10 @@ SVG image, implemented using React.js and Flux.
 Via slider and input controls, it allows you to adjust various
 parameters affecting the shapes of the puzzle pieces.
 
+You can see it running here:
+
+http://davidhmartin.github.io/flux-jigsaw/dist/
+
 ## Why does this exist?
 
 It's a tool in support of a future 'fun' app involving manipulation of images, such as
@@ -17,7 +21,7 @@ experience of using React against mvc frameworks such as Backbone.
 
 ## Current Status
 
-This is a work in progress. Still to-do: css styles, some implementation cleanup, additional features such as image export. 
+To Do: Additional features such as image export. 
 
 
 ## Running the project
